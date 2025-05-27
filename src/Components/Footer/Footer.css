@@ -1,0 +1,156 @@
+.footer {
+  background: #fff;
+  color: #000000;
+  padding: 40px 20px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-divider {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin-bottom: 30px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: left;
+}
+
+.footer-section h4 {
+  font-size: 16px;
+  margin-bottom: 6px;
+  color: #e42b2e;
+  font-weight: 600;
+}
+
+.footer-section a,
+.footer-section p {
+  margin: 2px 0;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+  min-width: 220px;
+}
+
+.logo-section img {
+  max-width: 150px;
+}
+
+.links-section a,
+.contact-section a {
+  display: block;
+  color: #000000;
+  text-decoration: none;
+  margin: 6px 0;
+}
+
+.links-section a:hover,
+.contact-section a:hover {
+  color: #e42b2e;
+}
+
+.footer-section h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.contact-section p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.socials-section p {
+  margin: 8px 0 4px;
+  font-size: 14px;
+  color: black;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  font-size: 18px;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #e42b2e;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 13px;
+  color: black;
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  padding: 10px 12px;
+  font-size: 18px;
+  border: none;
+  border-radius: 50%;
+  background: #e42b2e;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-top:hover {
+  background: #c21f23;
+}
+
+/* MOBILE STYLES */
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px 10px 10px !important;
+  }
+
+  .footer-content {
+    flex-direction: column !important;
+    align-items: flex-start;
+    gap: 4px !important;
+    padding: 0 8px !important;
+  }
+
+  .footer-section {
+    flex: none !important;
+    width: 100% !important;
+    min-width: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .footer-section h4 {
+    margin: 0 0 4px 0 !important;
+    padding: 0 !important;
+    font-size: 14px !important;
+    line-height: 1.2 !important;
+  }
+
+  .footer-section a,
+  .footer-section p,
+  .links-section a,
+  .contact-section a,
+  .contact-section p,
+  .socials-section p {
+    margin: 0 0 4px 0 !important;
+    padding: 0 !important;
+    font-size: 13px !important;
+    line-height: 1.2 !important;
+  }
+
+  .social-icons a {
+    margin-right: 8px !important;
+    font-size: 16px !important;
+  }
+}
