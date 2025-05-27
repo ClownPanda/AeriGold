@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Footer.css';
 import logo from '../../assets/logo.png';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -31,10 +32,14 @@ const Footer = () => {
   {/* Quick Links */}
   <div className="footer-section links-section">
     <h4 style={{color:"#e42b2e", fontWeight:"bolder", fontSize:"18px"}}>Quick Links</h4>
-    <a href="/">Home</a>
+    {/* <a href="/">Home</a>
     <a href="/about">About</a>
     <a href="/product">Products</a>
-    <a href="/contact">Contact</a>
+    <a href="/contact">Contact</a> */}
+    <Link to='/'>Home</Link>
+    <Link to='/about'>About</Link>
+    <Link to='/product'>Product</Link>
+    <Link to='/contact'>Contact</Link>
   </div>
 
   {/* Address */}
