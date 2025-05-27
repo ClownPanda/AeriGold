@@ -22,7 +22,7 @@ const NavBar = () => {
     return (
         <nav className={color ? "color" : ""}>
             <div className="logo">
-                <img src={logo} alt="" />
+             <Link to='/'>   <img src={logo} alt="" /></Link>
             </div>
             <div className={click ? "menu active" : "menu"}>
                 <Link to="/">Home</Link>
